@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Soumission de projet - ProService</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<header>
+  <h1>Soumettez votre projet</h1>
+  <p>Remplissez le formulaire ci-dessous pour que notre équipe l’examine.</p>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="Service.html">Services</a>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>Validation de Projets</h2>
+      <p>
+        Nous analysons la faisabilité et la viabilité de vos idées avant leur lancement, 
+        pour vous garantir un projet solide et durable.
+      </p>
+    </section>
+  
+  <section>
+    <h2>Accompagnement Personnalisé</h2>
+      <p>
+        De la planification à la mise en œuvre, notre équipe vous guide à chaque étape 
+        afin d’assurer le bon déroulement de vos projets.
+      </p>
+     </section>
+
+     <section>
+        <h2>Conseil en Développement</h2>
+        <p>
+          Nous proposons des solutions stratégiques et techniques pour aider votre entreprise 
+          à se développer efficacement et durablement.
+        </p>
+      </section>
+
+ <section>
+      <h2>Demande de Services</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Votre nom" required />
+        <input type="email" id="email" placeholder="Votre e-mail" required />
+        <input type="text" id="projet" placeholder="Nom du projet" required />
+        <textarea id="message" rows="4" placeholder="Décrivez votre besoin" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+  </section>
+</main>
+
+<script>
+    window.addEventListener("scroll", function () {
+      let header = document.querySelector("header");
+      if (window.scrollY > 10) {
+        header.classList.add("scroll-active");
+      } else {
+        header.classList.remove("scroll-active");
+      }
+    });
+  </script>
+
+<footer>
+  <p>>© 2025 ProService - Tous droits réservés.</p>
+</footer>
+</body>
+</html>
